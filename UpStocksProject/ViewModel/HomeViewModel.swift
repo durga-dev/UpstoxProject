@@ -10,14 +10,11 @@ import Foundation
 protocol HomeViewModelProtocol: AnyObject {
     func viewDidLoad()
     var updateHoldingData: ((UpStockHoldingMapperProtocol?) -> ())? { get set }
+    func sum(a: Int, b: Int) -> Int
 }
 
 public class HomeViewModel: HomeViewModelProtocol {
     var updateHoldingData: ((UpStockHoldingMapperProtocol?) -> ())?
-    
-    init() {
-        
-    }
     
     func viewDidLoad() {
         getHoldings()
@@ -36,5 +33,9 @@ public class HomeViewModel: HomeViewModelProtocol {
                     self?.updateHoldingData?(reponse)
                 }
             }
+    }
+    
+    func sum(a: Int, b: Int) -> Int {
+        return a + b
     }
 }

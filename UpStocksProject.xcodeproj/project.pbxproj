@@ -19,9 +19,20 @@
 		8A42300D29365F63008A22C3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42300C29365F63008A22C3 /* HomeViewModel.swift */; };
 		8A42301129368110008A22C3 /* HomeViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42301029368110008A22C3 /* HomeViewController+UITableView.swift */; };
 		8A4230132936854D008A22C3 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4230122936854D008A22C3 /* StockListView.swift */; };
+		8A44E7CB2938EDE400B5D0DB /* UpStocksProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E7CA2938EDE400B5D0DB /* UpStocksProjectTests.swift */; };
 		8A44EABA29370DA7003471E7 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44EAB929370DA7003471E7 /* FooterView.swift */; };
 		8A44EABC29371211003471E7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44EABB29371210003471E7 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A44E7CC2938EDE400B5D0DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A422FE12936514F008A22C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A422FE82936514F008A22C3;
+			remoteInfo = UpStocksProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8A422FE92936514F008A22C3 /* UpStocksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpStocksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,12 +49,21 @@
 		8A42300C29365F63008A22C3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8A42301029368110008A22C3 /* HomeViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UITableView.swift"; sourceTree = "<group>"; };
 		8A4230122936854D008A22C3 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		8A44E7C82938EDE400B5D0DB /* UpStocksProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpStocksProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A44E7CA2938EDE400B5D0DB /* UpStocksProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpStocksProjectTests.swift; sourceTree = "<group>"; };
 		8A44EAB929370DA7003471E7 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		8A44EABB29371210003471E7 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8A422FE62936514F008A22C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A44E7C52938EDE400B5D0DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8A422FEB2936514F008A22C3 /* UpStocksProject */,
+				8A44E7C92938EDE400B5D0DB /* UpStocksProjectTests */,
 				8A422FEA2936514F008A22C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8A422FE92936514F008A22C3 /* UpStocksProject.app */,
+				8A44E7C82938EDE400B5D0DB /* UpStocksProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +145,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8A44E7C92938EDE400B5D0DB /* UpStocksProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A44E7CA2938EDE400B5D0DB /* UpStocksProjectTests.swift */,
+			);
+			path = UpStocksProjectTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +173,24 @@
 			productReference = 8A422FE92936514F008A22C3 /* UpStocksProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8A44E7C72938EDE400B5D0DB /* UpStocksProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A44E7D02938EDE500B5D0DB /* Build configuration list for PBXNativeTarget "UpStocksProjectTests" */;
+			buildPhases = (
+				8A44E7C42938EDE400B5D0DB /* Sources */,
+				8A44E7C52938EDE400B5D0DB /* Frameworks */,
+				8A44E7C62938EDE400B5D0DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A44E7CD2938EDE400B5D0DB /* PBXTargetDependency */,
+			);
+			name = UpStocksProjectTests;
+			productName = UpStocksProjectTests;
+			productReference = 8A44E7C82938EDE400B5D0DB /* UpStocksProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +203,10 @@
 				TargetAttributes = {
 					8A422FE82936514F008A22C3 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					8A44E7C72938EDE400B5D0DB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 8A422FE82936514F008A22C3;
 					};
 				};
 			};
@@ -172,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				8A422FE82936514F008A22C3 /* UpStocksProject */,
+				8A44E7C72938EDE400B5D0DB /* UpStocksProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +237,13 @@
 				8A422FF929365153008A22C3 /* LaunchScreen.storyboard in Resources */,
 				8A422FF629365153008A22C3 /* Assets.xcassets in Resources */,
 				8A422FF42936514F008A22C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A44E7C62938EDE400B5D0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A44E7C42938EDE400B5D0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A44E7CB2938EDE400B5D0DB /* UpStocksProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A44E7CD2938EDE400B5D0DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A422FE82936514F008A22C3 /* UpStocksProject */;
+			targetProxy = 8A44E7CC2938EDE400B5D0DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A422FF22936514F008A22C3 /* Main.storyboard */ = {
@@ -398,6 +474,40 @@
 			};
 			name = Release;
 		};
+		8A44E7CE2938EDE500B5D0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.release.project.UpStocksProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpStocksProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpStocksProject";
+			};
+			name = Debug;
+		};
+		8A44E7CF2938EDE500B5D0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.release.project.UpStocksProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpStocksProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpStocksProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +525,15 @@
 			buildConfigurations = (
 				8A422FFE29365153008A22C3 /* Debug */,
 				8A422FFF29365153008A22C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A44E7D02938EDE500B5D0DB /* Build configuration list for PBXNativeTarget "UpStocksProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A44E7CE2938EDE500B5D0DB /* Debug */,
+				8A44E7CF2938EDE500B5D0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
